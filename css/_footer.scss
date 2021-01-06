@@ -1,0 +1,51 @@
+.footer {
+  background: $color-secondary;
+  grid-column: full-starts / full-ends;
+  padding: 8rem;
+}
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    font-family: $font-display;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+  &__link:hover,
+  &__link:active {
+    background: rgba(#fff, 0.5);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+}
+}
+.copyright{
+    font-size: 1.4rem;
+    color: $color-grey-light-2;
+    margin-top: 6rem;
+    text-align: center;
+}
+.own{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
